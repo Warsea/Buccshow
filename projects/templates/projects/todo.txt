@@ -1,0 +1,5 @@
+add name "buccshow" in navbar
+try navbar a bit in the center
+make sure that "home" and "add project" button works
+add project page
+dynamic title in every page 

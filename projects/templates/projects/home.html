@@ -1,0 +1,32 @@
+{% extends 'projects/layout.html' %} {% block title %}Buccshow{% endblock %}
+{%block content%}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <h3 class="text-muted py-2">Projects</h3>
+      {% if projects.count == 0 %}
+      <h6>No projects to show. Add your project to show your skills.</h6>
+      {% else %} {% for i in projects %}
+      <div class="card border-secondary mb-3">
+        <div class="card-body text-secondary">
+          <h5 class="card-title">
+            <a
+              class="link-secondary"
+              style="text-decoration: none"
+              href="{% url 'project' i.id %}"
+              >{{i.project_name}}
+            </a>
+          </h5>
+          <p class="card-text limit-line">{{i.description}}</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+          By: {{i.student_name}}
+        </div>
+      </div>
+
+      {% endfor %} {% endif %}
+    </div>
+  </div>
+</div>
+
+{%endblock%}
