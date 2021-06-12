@@ -14,3 +14,13 @@ Since this project is built using django, django must be installed in your compu
 ``` 
 pip install django
 ```
+
+### Step 2(clone project)
+On an empty directory, clone this project:
+
+```
+git clone [url]
+```
+
+### Step 4(Run migrations)
+
