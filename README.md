@@ -23,4 +23,29 @@ git clone [url]
 ```
 
 ### Step 4(Run migrations)
+Run the following commands to run the migrations:
 
+1) ```python manage.py makemigrations```
+2) ```python manage.py migrate```
+
+### Step 5(Create superuser) 
+
+The superuser is needed to access the admin panel. In order to create a superuser, run:
+```
+python manage.py createsuperuser
+```
+
+And enter the details required.
+
+### Step 6(Run the application)
+Run the following command to start the development server:
+
+```
+python manage.py runserver
+```
+
+Then go a browser and enter the localhost at which the server ran.(Usually, it you should find it on `http://localhost:8000/`. But the link can be found in the terminal once the `python manage.py runserver` command is entered.)
+
+
+
+The above steps should allow others to run the project. Do let me know if there is an issue while running the project. 
