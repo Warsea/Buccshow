@@ -9,7 +9,7 @@ The project is build using python(Django) and Bootstrap.
 In order to run this project on your computer, follow the steps below. 
 
 ### Step 1(Ensure that django is installed) 
-Since this project is built using django, django must be installed in your computer. Install django with the following command:
+Since this project is built using django, django must be installed. Install django with the following command:
 
 ``` 
 pip install django
@@ -44,7 +44,7 @@ Run the following command to start the development server:
 python manage.py runserver
 ```
 
-Then go a browser and enter the localhost at which the server ran.(Usually, it can be found at `http://localhost:8000/`. But the link can be found in the terminal once the `python manage.py runserver` command is entered.)
+Then go a browser and enter the localhost at which the server ran.(Now that the server’s running, visit http://127.0.0.1:8000/ with your Web browser)
 
 
 
